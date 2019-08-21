@@ -14,3 +14,4 @@ COPY ${JAR_FILE} app.jar
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
 
 #sudo docker build . -t temp-repo/fargate-demo
+#add jenkins auto trigger
