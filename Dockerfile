@@ -10,3 +10,4 @@ ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/usr/app.ja
 
 #sudo docker build . -t temp-repo/fargate-demo
 #add jenkins auto trigger
+#docker container run -d -p 8888:8080 temp-repo/fargate-demo:latest

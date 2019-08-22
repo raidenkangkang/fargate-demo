@@ -15,7 +15,7 @@ public class FargatedemoApplication {
 
     @RequestMapping("/hello")
     public String getFileName(){
-        return "Hello AWS Fargate.....";
+        return "Hello AWS Raiden From Fargate.....";
     }
 
 }
