@@ -10,8 +10,8 @@ ENV PATH $JAVA_HOME/bin:$PATH
 
 VOLUME /tmp
 ARG JAR_FILE
-COPY ${JAR_FILE} app.jar
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
+COPY ${JAR_FILE} fargatedemo-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/fargatedemo-0.0.1-SNAPSHOT.jar"]
 
 #sudo docker build . -t temp-repo/fargate-demo
 #add jenkins auto trigger
